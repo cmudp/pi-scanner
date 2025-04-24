@@ -1,0 +1,17 @@
+{
+  "name": "pi-scanner",
+  "version": "1.0.0",
+  "description": "A Node.js tool to scan the local network for Raspberry Pi devices by checking live IPs and MAC address prefixes.",
+  "main": "scanner.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^8.2.6",
+    "node-arp": "^1.0.6",
+    "ping": "^0.4.4"
+  }
+}
