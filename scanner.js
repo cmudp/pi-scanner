@@ -64,7 +64,7 @@ function checkMACAddresses(hosts) {
   hosts.forEach(function (host) {
     arp.getMAC(host, function (err, mac) {
       if (!err && mac && isRaspberryPi(mac)) {
-        console.log('?? Raspberry Pi found at ' + host + ' (MAC: ' + mac + ')');
+        console.log('🎯 Raspberry Pi found at ' + host + ' (MAC: ' + mac + ')');
       }
     });
   });
@@ -82,9 +82,9 @@ function main() {
     }
   ]).then(function (answers) {
     var subnet = answers.subnet;
-    console.log('\n?? Scanning ' + subnet + '.0/24...');
+    console.log('\n📡 Scanning ' + subnet + '.0/24...');
     scanNetwork(subnet, function (liveHosts) {
-      console.log('\n?? Found ' + liveHosts.length + ' live hosts. Checking for Raspberry Pi devices...');
+      console.log('\n🔎 Found ' + liveHosts.length + ' live hosts. Checking for Raspberry Pi devices...');
       checkMACAddresses(liveHosts);
     });
   });
