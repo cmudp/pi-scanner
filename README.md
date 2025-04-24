@@ -16,5 +16,5 @@ A Node.js tool to scan the local network for Raspberry Pi devices by checking li
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/pi-scanner.git
+git clone https://github.com/cmudp/pi-scanner.git
 cd pi-scanner
